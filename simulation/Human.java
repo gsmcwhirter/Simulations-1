@@ -28,6 +28,14 @@ public class Human extends Actor implements Movable, CanEat, Edible
     }
     
     /**
+     *  Consumes a level of food (mostly for testing purposes)
+     */
+    public void consumeFood()
+    {
+        foodLevel--;
+    }
+    
+    /**
      *  Gets the color of the current block
      *  @return the color of the block (javafx.scene.paint.Color)
      */

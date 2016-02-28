@@ -59,6 +59,14 @@ public class Zombie extends Actor implements Movable, CanEat, Growable
     }
     
     /**
+     *  Consumes a level of food (mostly for testing purposes)
+     */
+    public void consumeFood()
+    {
+        foodLevel--;
+    }
+    
+    /**
      *  Gets the speed of the zombie
      *  
      *  Larger zombies are slower
