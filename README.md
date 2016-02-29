@@ -137,10 +137,12 @@ Now we should be able to compile the `Plant` class and start writing a few tests
 
 Then add a line to the `main` method that calls the terrain testing method. Run the main method to make sure it works. If it doesn't, go back and fix things.
 
-1. Did we miss any methods in our testing? If so, which one(s)?
-2. For each method missed (if any), try to explain why we omitted it.
+1. Explain the output of printing `p`, `g`, and `ed`.
+2. Why are we able to print a `Growable`, even though it doesn't list a `toString()` method?
 3. Why couldn't we print out `ed`'s size?
 4. Why couldn't we print out whether `g` or `ed` was dead?
+5. Did we miss any methods in our testing? If so, which one(s)?
+6. For each method missed (if any), try to explain why we omitted it.
 
 ### Humans
 
