@@ -28,12 +28,27 @@ public class DirtTerrain extends Terrain
     }
     
     /**
+     *  Tells the terrain to attempt to randomly mutate
+     *  (each terrain can choose whether to actually change and how)
+     *  @return true if the terrain mutated, false otherwise
+     */
+    public boolean randomMutation()
+    {
+        if (Math.random() < MUTATION_CHANCE)
+        {
+            setPassable(!passable);
+            return true;
+        }
+        return false;
+    }
+    
+    /**
      *  Tells the terrain to become passable or impassable
      *  @param yes if true, becomes passable, if false, impassable
      *  @return true if the terrain passability was set, false otherwise
      */
     @Override //implements abstract
-    public boolean setPassable(boolean yes, boolean no)
+    public boolean setPassable(boolean yes)
     {
         passable = yes;
         return true;
