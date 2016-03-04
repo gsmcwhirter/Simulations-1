@@ -35,7 +35,7 @@ While we are getting everything working, we won't be trying to run the full simu
 
 The first class we will finish implementing is the DirtTerrain. Try compiling just that class, without any changes, and pay attention to the error message that you get.
 
-Now add a new method to the class to fix the error. For now, just make it return a dummy value of true and make sure it compiles.
+Now add a new method to the class to fix the error. For now, just make it return a dummy value of true and make sure it compiles (that is, make sure a new error message comes up).
 
 It is a good idea to include the following line above your method header:
 
@@ -43,7 +43,9 @@ It is a good idea to include the following line above your method header:
     
 This is an *annotation*. It tells the compiler that you are intending to override a method. If you happen to mess up the signature (by mis-spelling, or having different parameters), then it will stop you until you fix it.
 
-Once the method is created and the class compiles, we can add some code to test it. In the `SimulationTester` class, let's add a static method `testDirtTerrain`. In this method, we want to do the following:
+The second error we are seeing is a case of this. It is telling you that the method `setPassable` that was supposed to override an abstract method in `Terrain` isn't doing so. Fix it so that the `DirtTerrain` class will compile.
+
+Once the class compiles, we can add some code to test it. In the `SimulationTester` class, let's add a static method `testDirtTerrain`. In this method, we want to do the following:
 
 0. Print out that the terrain test is starting.
 1. Create a new DirtTerrain object assigned to a Terrain variable. Pass in null as the parameter to the constructor.
